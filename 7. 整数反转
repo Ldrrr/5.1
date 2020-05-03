@@ -1,0 +1,16 @@
+int reverse(int x)
+{
+	int flag=1,t;
+	long s=0;
+	while(x)
+	{
+		t=x%10;
+		s=10*s+t;
+		x/=10;
+	}
+	if((int)s!=s)
+	{
+		return 0;
+	}
+	return (int)s;
+}
